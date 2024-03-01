@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>timer</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="monitor" class="segment">00:00</div>
+      <div id="speed__monitor">200x</div>
+      <div class="segment">
+        <input
+          type="number"
+          id="time__out"
+          value="12"
+          placeholder="time out (minute)"
+        />
+        <input type="range" id="speed" min="1" max="2000" value="100" />
+      </div>
+      <div id="keyboard" class="segment">
+        <button class="button" id="startStop">start</button>
+        <button class="button" id="reset">reset</button>
+      </div>
+    </div>
+  </body>
+</html>
